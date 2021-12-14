@@ -1,37 +1,28 @@
-## Welcome to GitHub Pages
+# Evalution of the political cleavage in the USA
 
-You can use the [editor on GitHub](https://github.com/AndreasLP/APA-DataStory/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Abstract
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+## Research questions, data and methods
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Research questions
 
-```markdown
-Syntax highlighted code block
+### Data
+Description of the data and extra data sources
 
-# Header 1
-## Header 2
-### Header 3
+### Methods
 
-- Bulleted
-- List
+## Data presentation
+Statistics and plots
 
-1. Numbered
-2. List
+## Results
 
-**Bold** and _Italic_ and `Code` text
+### Overall
 
-[Link](url) and ![Image](src)
-```
+### Through time
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Jekyll Themes
+## Conclusion
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/AndreasLP/APA-DataStory/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## References
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
