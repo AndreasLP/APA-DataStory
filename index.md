@@ -32,7 +32,7 @@ First, we should note that we consider a politician as being aggressive if she o
 
 When we look at the whole dataset, we discover that democrats seem to be more aggressive. Indeed, out of 17 aggressive politicians fromn 2015 to 2020, **14 are democrats**, that's more than 80%! Republicans seem to be quite far away from the old grumpy reactionary stereotype that we might have. But does the picture change when we look at it on a yearly basis?
 
-[Aggressivity by year and party](./figures/3.4.aggressivity_year_party.png)
+![Aggressivity by year and party](./figures/3.4.aggressivity_year_party.png)
 
 That's more interesting. In 2017 and 2018, aggressive speakers are overwhelmingly democrats. Only one republican is denoted as aggressive. In 2019, we have an exact parity between democrats and republicans.
 
