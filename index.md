@@ -67,10 +67,42 @@ That's more interesting. In 2017 and 2018, aggressive speakers are overwhelmingl
 From this figure, we clearly see that something seems to have happened around 2016 (Trump's election?) which seems to have (1) greatly increased the number of quotes about the other camp by politicians and, (2) greatly increased the number of aggressive speakers (democrats in that case). In 2019, republicans seem to have responded to that aggressivity by also being aggressive. In other words, whatever happened in 2016 seems to have **increased the political cleavage** in the US. 
 This leads us to think that major political events like Trump's election could have been a driver to increase the political cleavage in the USA. But is that true? 
 
+
+
+
+
+
+
+
+
 ## Impact of key events
-Section 3.5  
-René's part  
+ 
+We will now proceed with the analysis of the impact of each event on the political media sphere. To do so, we take a look at the evolution of the number of quotes and their sentiment around each key events.
+We've computed metrics on the average score, the number of quotes for each period and party, and the difference between periods. Here's a graphical representation of these metrics :
+
+![Metrics graphical representation](./figures/metrics_graph.png)
+
+We can see an overall slightly decreasing average sentiment score trend overall as exhibited earlier. The number of quotes plot showcases a very fluctuating behaviour (as not all events had the same importance) but we can see an overall increasing trend. Gaps between the red and green curves could express a causal impact of the event on the talk rate of politics. The percentage evolution seem steady around 0 except the 2 big spikes. However, upon closer inspection (where we removed the 2 extreme values) :
+
+![Percentage evolution of the number of quotes](./figures/percentage_evolution.png)
+
+Zooming on the curve we see that, despite having a lot of instances where the curves cross the 0 line, when it goes above it, the spikes go to a higher order of magnitude. This observation, coupled with the increasing number of quotes show a heavier reaction of politics towards their antagonist.
+The highest percentage evolution represent the events which had the highest talkative impact on politics, here's a table of the 20% top scores for all politics :
+
+![Top 20% most contrversial events](./figures/top20_controvesial.png)
+
+Looking at this table, we see that the events that spark the most debate are on majority of political origin. Upon further inspection, 6 out of the 12 most controversial events are about former president D. Trump. The difference in sentiment score is pretty high after he won the New Hampshire primaries. However, this score doesn't reflect the true sentiment as we lack data from democrats before the event.
+
+
+
+![Top 20% most silencing events](./figures/top20_silencing.png)
+
+This table show the other side of previous table, where we present the events that induced a silencing effect on politicians. The recurring themes are mass shootings and topics where politicans have to take a stance that can be cleaving for the electors : Same-sex marriage supreme court rule, Baltimore protests, LGBT debate for republicans.
+
+All in all, this events examinations reveal some pretty expected results. Overall, the amount of reaction has increased over time, with reations being more virulent on political topics that don't force politicians to take a stance on touchy topics or follow mass shootings. Donald Trump was at the heart of many of the most controversial debates.
+
 Remark:  
+Should I better focus on specific events or do a mini-analysis like this tho ?
 Instead of showing the analysis for all events, could only focus on those (1 or 2) for which we do see a change (or just 1, like Trump's election [if we actually see a significant change]).
 
 To see the potential impact of key events on the political cleavage's evolution, we first need to have a list of major events. For that, we decided to manually gather a list from [Wikipedia's yearly US events](https://en.wikipedia.org/wiki/2015_in_the_United_States). We included any event that we deemed either (very) important on a national or international scale, or that had the potential to increase discursive polarization. For the latter, an example would be one of the many mass shootings that inevitably sparks a debate about gun control between the two political camps.
