@@ -29,7 +29,7 @@ This graph is very interesting. While it seems quite hard to draw insights when 
 Those are all hypothesizes and questions that we'll try to answer. Before that, since we are analyzing the sentiment of each quote, we will first take a look at the semantic side of the analysis.
 
 ## Most common words used
-![DEM wordcloud](./figures/dem_wordcloud.png) ![GOP wordcloud](./figures/rep_wordcloudpng)
+![DEM wordcloud](./figures/dem_wordcloud.png) ![GOP wordcloud](./figures/rep_wordcloud.png)
 
 Unsurpisingly, we see that democrats' most used words are targeting [Donald Trump](https://en.wikipedia.org/wiki/Donald_Trump) while republicans seem to focus on [Hillary Clinton](https://en.wikipedia.org/wiki/Hillary_Clinton), [Barack Obama](https://en.wikipedia.org/wiki/Barack_Obama) and [Nancy Pelosi](https://en.wikipedia.org/wiki/Nancy_Pelosi). Apart from that, we see other interesting recurring words from democrats like "health care", "right", "vote" and "fact". Remember, those are the most used terms when mentioning republicans. This underlines the main topics.
 
