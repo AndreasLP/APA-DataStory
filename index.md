@@ -82,7 +82,7 @@ We've computed metrics on the average score, the number of quotes for each perio
 
 ![Metrics graphical representation](./figures/metrics_graph.png)
 
-We can see an overall slightly decreasing average sentiment score trend overall as exhibited earlier. The number of quotes plot showcases a very fluctuating behaviour (as not all events had the same importance) but we can see an overall increasing trend. Gaps between the red and green curves could express a causal impact of the event on the talk rate of politics. The percentage evolution seem steady around 0 except the 2 big spikes. However, upon closer inspection (where we removed the 2 extreme values) :
+We can see an overall slightly decreasing average sentiment score trend overall as exhibited earlier. The number of quotes plot showcases a very fluctuating behaviour (keeping in mind not all events had the same importance) but we can see an overall increasing trend. Gaps between the red and green curves could express a causal impact of the event on the talk rate of politics. The percentage evolution seem steady around 0 except the 2 big spikes. However, upon closer inspection (where we removed the 2 extreme values) :
 
 ![Percentage evolution of the number of quotes](./figures/percentage_evolution.png)
 
