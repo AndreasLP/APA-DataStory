@@ -82,24 +82,22 @@ We've computed metrics on the average score, the number of quotes for each perio
 
 ![Metrics graphical representation](./figures/metrics_graph.png)
 
-We can see an overall slightly decreasing average sentiment score trend overall as exhibited earlier. The number of quotes plot showcases a very fluctuating behaviour (keeping in mind not all events had the same importance) but we can see an overall increasing trend. Gaps between the red and green curves could express a causal impact of the event on the talk rate of politics. The percentage evolution seem steady around 0 except the 2 big spikes. However, upon closer inspection (where we removed the 2 extreme values) :
+We can see an overall slightly decreasing average sentiment score trend as exhibited earlier. The bottom left plot showcases the number of quotes for each event. We a very fluctuating behaviour (keeping in mind not all events had the same importance) but we can see either an overall increasing trend either a separation around the 23rd event from where politicians where more talkative. Gaps between the red and green curves could express a causal impact of the event on the talk rate of politics. These gaps seem to be wider from the 23rd event separation point. The percentage evolution of quotes number seem steady around 0 except the 2 big spikes. However, upon closer inspection (where we remove the 2 extreme values), we observe the following plot :
 
 ![Percentage evolution of the number of quotes](./figures/percentage_evolution.png)
 
-Zooming on the curve we see that, despite having a lot of instances where the curves cross the 0 line, when it goes above it, the spikes go to a higher order of magnitude. This observation, coupled with the increasing number of quotes show a heavier reaction of politics towards their antagonist.
-The highest percentage evolution represent the events which had the highest talkative impact on politics, here's a table of the 20% top scores for all politics :
+Zooming on the chart we see that, despite the fluctuations of the curves around the 0 line, when it goes above it, the spikes tend to go to a higher order of magnitude. This observation, coupled with the increasing number of quotes show a heavier reaction of politics towards their antagonist.
+The highest percentage evolution represent the events which influenced politicians the most to call out their opponents. Here's a table of the 20% top scores for all politics :
 
 ![Top 20% most contrversial events](./figures/top20_controvesial.png)
 
 Looking at this table, we see that the events that spark the most debate are on majority of political origin. Upon further inspection, 6 out of the 12 most controversial events are about former president D. Trump. The difference in sentiment score is pretty high after he won the New Hampshire primaries. However, this score doesn't reflect the true sentiment as we lack data from democrats before the event.
 
-
-
 ![Top 20% most silencing events](./figures/top20_silencing.png)
 
-This table show the other side of previous table, where we present the events that induced a silencing effect on politicians. The recurring themes are mass shootings and topics where politicans have to take a stance that can be cleaving for the electors : Same-sex marriage supreme court rule, Baltimore protests, LGBT debate for republicans.
+This table show the other side of previous table, where we present the events that induced the most silencing effect on politicians. The recurring themes are mass shootings and topics where politicans have to take a stance that can be cleaving for the electors : Same-sex marriage supreme court rule, Baltimore protests, LGBT debate for republicans.
 
-All in all, this events examinations reveal some pretty expected results. Overall, the amount of reaction has increased over time, with reations being more virulent on political topics that don't force politicians to take a stance on touchy topics or follow mass shootings. Donald Trump was at the heart of many of the most controversial debates.
+All in all, this event examination revealed some pretty expected results. Overall, the amount of reaction has increased over time, with reactions being more virulent on political topics that don't force politicians to take a stance (touchy subjects) or following mass shootings. Donald Trump was at the heart of many of the most controversial debates.
 
 Remark:  
 Should I better focus on specific events or do a mini-analysis like this tho ?
