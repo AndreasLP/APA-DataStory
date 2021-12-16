@@ -1,0 +1,93 @@
+{% if page.url == "/" or page.url == "/404.html" %}
+{% assign is_home = true %}
+{% else %}
+{% assign is_home = false %}
+{% endif %}
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en" }}" class="dark-gray">
+
+<head>
+  <title>🐎⚡🐘 | Democrats v. Republicans</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="{{ "/static/app.css" | relative_url }}">
+  <link rel="shortcut icon" href="{{ "/favicon.svg" | relative_url }}" type="image/x-icon">
+
+</head>
+
+<body>
+  <main class="center pt4 pb4">
+    <nav>
+      <div class="container">
+          <ul>
+              <li class="evolution-of-the-political-cleavage-in-the-usa active"><a href="#evolution-of-the-political-cleavage-in-the-usa">Intro</a></li>
+              <li class="overall-look"><a href="#overall-look">Overall look</a></li>
+              <li class="most-common-words-used"><a href="#most-common-words-used">Common words</a></li>
+              <li class="who-speaks-about-what"><a href="#who-speaks-about-what">Topics</a></li>
+              <li class="any-trend"><a href="#any-trend">Trends</a></li>
+              <li class="who-is-the-most-aggressive"><a href="#who-is-the-most-aggressive">Aggressiveness</a></li>
+              <li class="impact-of-key-events"><a href="#impact-of-key-events">Key events</a></li>
+              <li class="conclusion"><a href="#conclusion">Conclusion</a></li>
+          </ul>
+      </div>
+    </nav>
+
+    <h1 class="mt0 mb3">
+        <a href="{{ " /" | relative_url }}" class="no-underline">
+          {{site.title}}
+        </a>
+    </h1>
+
+    <section class="pv2">
+      {{ content }}
+    </section>
+
+    <footer>
+      <p>
+        EPFL's 2021 <a href="https://dlab.epfl.ch/teaching/fall2021/cs401/">ADA</a> project · <a href="#">Website repository</a> · <a href="#">Project repository</a> 
+      </p>
+      <p>
+        Made by Daryna Bilodid, René de Champs, <a href="https://github.com/ogrnz">Olivier Grognuz</a>, Andreas Plesner
+      </p> 
+      <p>
+        Website created with <a href="https://jekyllrb.com/">Jekyll</a> and theme <a href="https://github.com/chibicode/duo">duo</a>
+      </p> 
+    </footer>
+  </main>
+
+
+  <script>
+    const h2s = document.querySelectorAll("h2");
+    const navLi = document.querySelectorAll("nav .container ul li");
+    const html = document.querySelector("html");
+
+    window.onscroll = () => {
+      var current = ""; 
+
+      h2s.forEach((h2) => {
+        const h2Top = h2.offsetTop;
+        if (pageYOffset >= h2Top - 150) {
+          current = h2.getAttribute("id"); 
+        }
+      });
+
+      // Hardcode edge cases
+      if (html.scrollTop == 0) {
+        current = "evolution-of-the-political-cleavage-in-the-usa";
+      } 
+      else if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+        current = "conclusion";
+    }
+
+      navLi.forEach((li) => {
+        li.classList.remove("active");
+        if (li.classList.contains(current)) {
+          li.classList.add("active");
+        }
+      });
+    };
+  </script>  
+</body>
+</html>
