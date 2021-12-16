@@ -98,10 +98,6 @@ a {
   position: relative;
   z-index: 20;
   text-decoration: none;
-  /* border-bottom: 1em solid #ffa726;
-  padding-bottom: -5px; */
-  /* text-decoration: underline 1em #ffa726;
-  transition: text-decoration-color 300ms; */
 }
 
 a::before {
@@ -125,12 +121,10 @@ a:hover::before {
 blockquote {
   padding-left: 1em;
   margin-left: 0;
-  /* light-gray */
   border-left: 5px solid #eee;
 }
 
 table, th, td {
-  /* moon-gray */
   border: 1px solid #ccc;
 }
 
@@ -150,28 +144,31 @@ figure img, p img {
 figcaption {
   text-align: center;
   padding-top: 0.25em;
-  /* Silver */
   color: #999;
 }
 
 /* main */
 main {
-  position: relative;
   max-width: 40em;
+  position: relative;
+  overflow: auto;
+  /* border: 1px solid blue; */
 }
 
 /* Navbar */
 nav {
-  position: fixed;
-  left: -10px;
-  top: 128px;
-  margin-left: 7vw;
+  position: absolute;
+  top: 165px;
+  left: -33%;
+  /* border: 1px solid red; */
 }
 
 nav .container {
+  position: fixed;
   margin: 0 auto;
   text-align: right;
   padding: 10px;
+  /* border: 1px solid black; */
 }
 
 nav ul li {
@@ -191,7 +188,6 @@ nav ul li.active {
   border-right: 15px solid #ffd392;
   transition: 300ms;
 }
-
 
 nav ul li.active a::before{
   height: 0;
@@ -241,25 +237,40 @@ footer p {
     margin-top: 4em;
   }
 
+  h1 {
+    padding-left: 1em;
+  }
+
+  main section {
+    padding: 0 2em;
+  }
+
   nav {
-    text-align: center;
-    background: #fff;
     z-index: 25;
-    border-bottom: 5px solid #ffd392;
-    top: 0;
+    position: fixed;
+    top: 0; 
+    bottom: 100%;
     left: 0;
     right: 0;
+    text-align: center;
+    width: auto;
     max-width: 40em;
-    margin:0 auto 500px auto;
+    margin:0 auto;
   }
 
   nav .container {
+    position: relative;
     padding: 0;
+    margin: 0;
+    text-align: center;
+    background: #fff;
+    opacity: 1;
+    border-bottom: 5px solid #ffd392;
   }
 
   nav ul {
     padding: 0;
-    margin: 10px 0;
+    margin: 0;
   }
 
   nav ul li {
