@@ -45,6 +45,7 @@ Using this on the compound score where we set x as the time in days from the fir
 - All: compound score ~ -3.364e-5 * x + 0.0850
 - Republicans: compound score ~ -4.695e-5 * x + 0.0986
 - Democrats: compound score ~ -1.800e-5 * x + 0.0697
+
 I.e. the compound score decreases on average by 1.23e-2, 1.71e-2, 6.57e-3 every 365 days (roughly one year) for all, republicans and democrats respectively.
 
 ![Sentiment by month and party with linear fits](./figures/3.3.average_month_party_with_linear_fits.png)
