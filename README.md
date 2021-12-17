@@ -21,6 +21,8 @@ Let's now look at the overall evolution of the sentiment's score for both partie
 
 ![Average sentiment per month and party](./figures/2.average_month_party.png)
 
+<img src="./figures/2.average_month_party.png" alt="Average sentiment per month and party" width="900"/>
+
 This graph is very interesting. While it seems quite hard to draw insights when first looking at it, but we can still make some observations. First, the **average sentiment score is decreasing for both parties since 2017**. Second, it seems that in some cases, both parties have a similar score on a given month (see beginning of 2017). However, in some cases like at the end of 2015, in the middle of 2017 or just at the end of 2019, both parties are strongly opposed. Could it be that this is the consequence of  some event?
 
 Those are all hypothesizes and questions that we'll try to answer. Before that, since we are analyzing the sentiment of each quote, we will first take a look at the semantic side of the analysis.
