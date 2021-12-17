@@ -40,17 +40,19 @@ Topic modeling (Daryna's part)
 
 We now want to know how the trend in general is, how it is across parties, and how dark the future is.
 
-One of the simplest models to estimate and interpret is the linear y = ax + b model where x is the time and y is the compound score. 
-Using this on the compound score where we set x as the time in days from the first quote in the data then we get:
-- All: compound score ~ -3.364e-5 * x + 0.0850
-- Republicans: compound score ~ -4.695e-5 * x + 0.0986
-- Democrats: compound score ~ -1.800e-5 * x + 0.0697
+One of the simplest models to estimate and interpret is the linear y = ax + b model where x is the time and y is the sentiment score. 
+Using this on the sentiment score where we set x as the time in days from the first quote in the data then we get:
+- All: sentiment score ~ -3.364e-5 * x + 0.0850
+- Republicans: sentiment score ~ -4.695e-5 * x + 0.0986
+- Democrats: sentiment score ~ -1.800e-5 * x + 0.0697
 
-I.e. the compound score decreases on average by 1.23e-2, 1.71e-2, 6.57e-3 every 365 days (roughly one year) for all, republicans and democrats respectively.
+I.e. the sentiment score decreases on average by 1.23e-2, 1.71e-2, 6.57e-3 every 365 days (roughly one year) for all, republicans and democrats respectively.
 
 ![Sentiment by month and party with linear fits](./figures/3.3.average_month_party_with_linear_fits.png)
 
-So it seems like eventhough the republicans start out being less aggresive than their collegues then they are trending towards being more aggresive - and they would be more aggresive at the end of 2017. However, the overall trend is also negative and democrats are not saints - they may not be trending downwards as fast as the the republicans, but they are also becoming more aggresive... But maybe this is not as bleak as we first could assume. The model coefficients may all be significant, but the models fits the data poorly and hardly explain any of the variation in the data (R^2 scores around 0.000 to 0.002). 
+So it seems like eventhough the republicans start out being less aggresive than their collegues then they are trending towards being more aggresive - and they would be more aggresive at the end of 2017. However, the overall trend is also negative and democrats are not saints - they may not be trending downwards as fast as the the republicans, but they are also becoming more aggresive... But maybe this is not as bleak as we first could assume. The model coefficients may all be significant, but the models fits the data poorly and hardly explain any of the variation in the data (R<sup>2</sup> scores around 0.000 to 0.002). 
+
+Further analysis shows that an ARMA(2,1) model is able to describe the variation in the data better than the linear model (R<sup>2</sup> of 0.13). This implies that in a sense the sentiment is just random variations that will ebb and flow, so maybe we should not be so worried about the future of the political system... 
 
 ## Who is the most aggressive?
 
