@@ -88,6 +88,7 @@ We can see an overall slightly decreasing average sentiment score trend as exhib
 Zooming on the chart we see that, despite the fluctuations of the curves around the 0 line, when it goes above it, the spikes tend to go to a higher order of magnitude. This observation, coupled with the increasing number of quotes show a heavier reaction of politics towards their antagonist.
 The highest percentage evolution represent the events which influenced politicians the most to call out their opponents. Here's a table of the 20% top scores for all politics :
 
+<div style="overflow-x: auto;">
 <table class="dataframe">
   <thead>
     <tr>
@@ -198,9 +199,11 @@ The highest percentage evolution represent the events which influenced politicia
     </tr>
   </tbody>
 </table>
+</div>
 
 Looking at this table, we see that the events that spark the most debate are on majority of political origin. Upon further inspection, 6 out of the 12 most controversial events are about former president D. Trump. The difference in sentiment score is pretty high after he won the New Hampshire primaries. However, this score doesn't reflect the true sentiment as we lack data from democrats before the event.
 
+<div style="overflow-x: auto;">
 <table class="dataframe">
   <thead>
     <tr>
@@ -311,6 +314,7 @@ Looking at this table, we see that the events that spark the most debate are on 
     </tr>
   </tbody>
 </table>
+</div>
 
 This table shows the other side of the previous table, where we present the events that induced the most silencing effect on politicians. The recurring themes are mass shootings and topics where politicans have to take a stance that can be cleaving for the electors : Same-sex marriage supreme court rule, Baltimore protests, LGBT debate for republicans.
 
