@@ -324,6 +324,3 @@ Instead of showing the analysis for all events, could only focus on those (1 or 
 Add remark about the methodology: can the political cleavage really be measured by sentiment score?
 
 Beyond political cleavage, the sentiment analysis that we did might provide insights on the personalization of the political discourse, as well as a change of norms and mode of expression in the digital space towards a more aggressive stand.
-
-## References
-

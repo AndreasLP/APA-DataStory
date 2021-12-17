@@ -26,6 +26,68 @@
         </a>
     </h1>
 
+    <aside>
+      <ul>
+        <li class="first quote">
+          <blockquote>
+            No justification whatsoever for this illegal and unconstitutional act of war that president trump took.
+            <br>
+          </blockquote>
+          <cite>Tusli Gabbard</cite>
+        </li>
+
+        <li class="quote">
+          <blockquote>
+            Never in our country's history have we had a president so coddled and pampered and protected by the media like Barack Obama.
+          </blockquote>
+          <cite>Joe Walsh</cite>
+        </li>
+
+        <li class="quote">
+          <blockquote>
+            Just to be clear, this precedent that you are prepared to set, you would be okay with a president, say, Elizabeth Warren, asking a foreign government to investigate her top republican rival, as long as there's some -- was some sort of allegation about that republican rival having some sort of connection to allegations of corruption?
+            <br>
+          </blockquote>
+          <cite>Rand Paul</cite>
+        </li>
+
+        <li class="quote">
+          <blockquote>
+            But if you're the wealthiest 1 percent, republicans will give you the sun, the moon, and the stars -- all of that at the expense of the great middle class.
+          </blockquote>
+          <cite>Nancy Pelosi</cite>
+        </li>
+
+        <li class="quote">
+          <blockquote>
+            No justification whatsoever for this illegal and unconstitutional act of war that president trump took.
+          </blockquote>
+          <cite>Tusli Gabbard</cite>
+        </li>
+
+        <li class="quote">
+          <blockquote>
+            Donald Trump once again is a racist who makes ever more outrageous racist remarks. It is insulting, both to the congressman and to the people he represents.
+          </blockquote>
+          <cite>Elizabeth Warren</cite>
+        </li>
+
+        <li class="quote">
+          <blockquote>
+            As republicans continue to support important pro-life policies, democrats are bowing to the most radical elements of their party & refusing to protect babies still in their mother's womb.
+          </blockquote>
+          <cite>Patrick Kennedy</cite>
+        </li>
+
+        <li class="quote">
+          <blockquote>
+            I think, if you look at president Trump, he has divided the country worst than it's ever been divided in its history -- or at least certainly for -- in the last 100 years. [...]
+          </blockquote>
+          <cite>John Hickenlooper</cite>
+        </li>
+      </ul>
+    </aside>
+
     <section class="pv2">
       {{ content }}
     </section>
@@ -35,12 +97,13 @@
         EPFL's 2021 <a href="https://dlab.epfl.ch/teaching/fall2021/cs401/">ADA</a> project · <a href="https://github.com/AndreasLP/APA-DataStory">Website repository</a> · <a href="https://github.com/epfl-ada/ada-2021-project-apa">Project repository</a> 
       </p>
       <p>
-        Made by Daryna Bilodid, René de Champs, <a href="https://github.com/ogrnz">Olivier Grognuz</a>, Andreas Plesner
+        Made by <a href="https://github.com/bilodidd">Daryna Bilodid</a>, <a href="https://github.com/ReneDCDSL">René de Champs</a>, <a href="https://github.com/ogrnz">Olivier Grognuz</a>, <a href="https://github.com/AndreasLP">Andreas Plesner</a>
       </p> 
       <p>
         Website created with <a href="https://jekyllrb.com/">Jekyll</a> and theme <a href="https://github.com/chibicode/duo">duo</a>
       </p> 
     </footer>
+
     <nav>
       <div class="container">
           <ul>
@@ -63,6 +126,18 @@
     const navLi = document.querySelectorAll("nav .container ul li");
     const html = document.querySelector("html");
     const nav = document.querySelector("nav");
+    const quotes = document.querySelectorAll("aside li.quote");
+    const sectionHeight = document.querySelector("section").scrollHeight;
+
+    // Set random quotes margin
+    const marginTop = sectionHeight / quotes.length
+    quotes.forEach((quote) => {
+      if (!quote.classList.contains("first")) {
+        quoteHeight = quote.clientHeight;
+        quote.style.margin = marginTop + "px 0 0 0";
+      }
+    })
+
 
     window.onscroll = () => {
 
