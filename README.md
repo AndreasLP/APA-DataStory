@@ -333,10 +333,6 @@ This table shows the other side of the previous table, where we present the even
 
 All in all, this event examination revealed some pretty expected results. Overall, the amount of reaction has increased over time, with reactions being more virulent on political topics that don't force politicians to take a stance (touchy subjects) or following mass shootings. Donald Trump was at the heart of many of the most controversial debates.
 
-**Remark:**  
-Should I better focus on specific events or do a mini-analysis like this tho ?
-Instead of showing the analysis for all events, could only focus on those (1 or 2) for which we do see a change (or just 1, like Trump's election [if we actually see a significant change]).
-
 ## Conclusion
 Add remark about the methodology: can the political cleavage really be measured by sentiment score?
 
