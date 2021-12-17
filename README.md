@@ -337,3 +337,5 @@ All in all, this event examination revealed some pretty expected results. Overal
 Add remark about the methodology: can the political cleavage really be measured by sentiment score?
 
 Beyond political cleavage, the sentiment analysis that we did might provide insights on the personalization of the political discourse, as well as a change of norms and mode of expression in the digital space towards a more aggressive stand.
+
+However this analysis does present some limits. Even though the natural language processing library we chose grabs sentiment polarity in quotes, it is not perfect as it was not trained on the exact same type of sentences. Several other libraries such as TextBlob and Flair were tried as well. However they either did not provide the same type of sentiment metric (Flair) or felt a bit less accurate in predicting the quotes sentiment (TextBlob). 
