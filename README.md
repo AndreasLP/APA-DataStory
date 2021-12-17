@@ -26,11 +26,12 @@ This graph is very interesting. While it seems quite hard to draw insights when 
 Those are all hypothesizes and questions that we'll try to answer. Before that, since we are analyzing the sentiment of each quote, we will first take a look at the semantic side of the analysis.
 
 ## Most common words used
-<img class="img-flt" alt="Dem wordcloud" src="./figures/dem_wordcloud.png"> <img class="img-flt" alt="GOP wordcloud" src="./figures/rep_wordcloud.png">
+<img class="img-flt" alt="Dem wordcloud" src="./figures/dem_wordcloud.png">
+<img class="img-flt" alt="GOP wordcloud" src="./figures/rep_wordcloud.png">
 
-Unsurpisingly, we see that democrats' most used words are targeting [Donald Trump](https://en.wikipedia.org/wiki/Donald_Trump) while republicans seem to focus on [Hillary Clinton](https://en.wikipedia.org/wiki/Hillary_Clinton), [Barack Obama](https://en.wikipedia.org/wiki/Barack_Obama) and [Nancy Pelosi](https://en.wikipedia.org/wiki/Nancy_Pelosi). Apart from that, we see other interesting recurring words from democrats like "health care", "right", "vote" and "fact". Remember, those are the most used terms when mentioning republicans. This underlines the main topics.
+Unsurpisingly, we see that democrats' most used words are targeting [Donald Trump](https://en.wikipedia.org/wiki/Donald_Trump) while republicans seem to focus on [Hillary Clinton](https://en.wikipedia.org/wiki/Hillary_Clinton), [Barack Obama](https://en.wikipedia.org/wiki/Barack_Obama) and [Nancy Pelosi](https://en.wikipedia.org/wiki/Nancy_Pelosi). Apart from that, we see other interesting recurring words from both democrats and republicans like "health care", "right", "vote" and "fact". The main difference between the parties seem to be when politicians are directly mentioning someone. Remember, those are the most used terms when mentioning republicans. This underlines the main topics.
 
-Let's explore the different topics said by politicians and year.
+In light of what we just saw, let's now explore the different topics said by politicians and year.
 
 ## Who speaks about what?
 To be announced  
@@ -76,8 +77,7 @@ To see the potential impact of key events on the political cleavage's evolution,
 Remember the plot from the beginning? What happens if we add events to it?
 ![Events](./figures/3.5.events_average_month_party.png)
 
-We will now proceed with the analysis of the impact of each event on the political media sphere. To do so, we take a look at the evolution of the number of quotes and their sentiment around each key events.
-We've computed metrics on the average score, the number of quotes for each period and party, and the difference between periods. Here's a graphical representation of these metrics :
+Well, it seems uncertain to see what effect the events have on the sentiment score. If there is one, it is not systematic. To further our analysis, we will focus on each event individually. To do so, we take a look at the evolution of the number of quotes and their sentiment around each key events. We've computed metrics on the average score, the number of quotes for each period and party, and the difference between periods. Here's a graphical representation of these metrics :
 
 ![Metrics graphical representation](./figures/metrics_graph.png)
 
@@ -88,13 +88,231 @@ We can see an overall slightly decreasing average sentiment score trend as exhib
 Zooming on the chart we see that, despite the fluctuations of the curves around the 0 line, when it goes above it, the spikes tend to go to a higher order of magnitude. This observation, coupled with the increasing number of quotes show a heavier reaction of politics towards their antagonist.
 The highest percentage evolution represent the events which influenced politicians the most to call out their opponents. Here's a table of the 20% top scores for all politics :
 
-![Top 20% most contrversial events](./figures/top20_controvesial.png)
+<table class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Event</th>
+      <th>Diff_comp_avg</th>
+      <th>Quotes_num_bef</th>
+      <th>Quotes_num_aft</th>
+      <th>Quotes_num_evol</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>8</th>
+      <td>San Bernardino shooting</td>
+      <td>-0.13973</td>
+      <td>128</td>
+      <td>293</td>
+      <td>1.289062</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>New Hampshire primaries won by D. Trump</td>
+      <td>-0.166725</td>
+      <td>12</td>
+      <td>225</td>
+      <td>17.75</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Democrat Representatives protest in House of R...</td>
+      <td>-0.164455</td>
+      <td>11</td>
+      <td>43</td>
+      <td>2.909091</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>D. Trump visits Taiwan</td>
+      <td>0.024653</td>
+      <td>128</td>
+      <td>347</td>
+      <td>1.710938</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>New immigration policy bill by Trump administr...</td>
+      <td>0.035392</td>
+      <td>226</td>
+      <td>528</td>
+      <td>1.336283</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>Democrats in majority in the House of Represen...</td>
+      <td>0.054065</td>
+      <td>429</td>
+      <td>890</td>
+      <td>1.074592</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>2020 presidential campaign starts</td>
+      <td>0.113974</td>
+      <td>372</td>
+      <td>676</td>
+      <td>0.817204</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>Start of impeachment inquiry against Pres. D. ...</td>
+      <td>0.004898</td>
+      <td>422</td>
+      <td>991</td>
+      <td>1.348341</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>D. Trump refuses to appear for to his impeachm...</td>
+      <td>-0.070593</td>
+      <td>312</td>
+      <td>649</td>
+      <td>1.080128</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>Allegations of abuse of power from D. Trump</td>
+      <td>-0.039954</td>
+      <td>316</td>
+      <td>686</td>
+      <td>1.170886</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>Murder of Iranian general Qasem Soleimani</td>
+      <td>-0.251909</td>
+      <td>169</td>
+      <td>467</td>
+      <td>1.763314</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>House of Representatives limits Pres. power to...</td>
+      <td>0.090469</td>
+      <td>384</td>
+      <td>729</td>
+      <td>0.898438</td>
+    </tr>
+  </tbody>
+</table>
 
 Looking at this table, we see that the events that spark the most debate are on majority of political origin. Upon further inspection, 6 out of the 12 most controversial events are about former president D. Trump. The difference in sentiment score is pretty high after he won the New Hampshire primaries. However, this score doesn't reflect the true sentiment as we lack data from democrats before the event.
 
-![Top 20% most silencing events](./figures/top20_silencing.png)
+<table class="dataframe">
+  <thead>
+    <tr>
+      <th></th>
+      <th>Event</th>
+      <th>Diff_comp_avg</th>
+      <th>Quotes_num_bef</th>
+      <th>Quotes_num_aft</th>
+      <th>Quotes_num_evol</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2</th>
+      <td>2016 presidential campaign</td>
+      <td>0.01201</td>
+      <td>138</td>
+      <td>91</td>
+      <td>-0.34058</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Baltimore protests</td>
+      <td>0.000618</td>
+      <td>193</td>
+      <td>62</td>
+      <td>-0.678756</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>H. Clinton email's controversy</td>
+      <td>0.144023</td>
+      <td>151</td>
+      <td>96</td>
+      <td>-0.364238</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Same-sex marriage supreme court rule</td>
+      <td>0.027039</td>
+      <td>152</td>
+      <td>80</td>
+      <td>-0.473684</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Super Tuesday</td>
+      <td>-0.081974</td>
+      <td>162</td>
+      <td>5</td>
+      <td>-0.969136</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>US troosp withdraw from Afghanistan</td>
+      <td>-0.082436</td>
+      <td>122</td>
+      <td>20</td>
+      <td>-0.836066</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>Allegations of russian interference in preside...</td>
+      <td>0.154115</td>
+      <td>44</td>
+      <td>15</td>
+      <td>-0.659091</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>Las Vegas mass shooting</td>
+      <td>-0.144179</td>
+      <td>504</td>
+      <td>323</td>
+      <td>-0.359127</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>Marjory Stoneman Douglas High School shooting</td>
+      <td>-0.047664</td>
+      <td>568</td>
+      <td>328</td>
+      <td>-0.422535</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>Trump opposed to russian interference investig...</td>
+      <td>0.013622</td>
+      <td>493</td>
+      <td>329</td>
+      <td>-0.332657</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>Huawei accused of fraud</td>
+      <td>-0.071283</td>
+      <td>662</td>
+      <td>458</td>
+      <td>-0.308157</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>El Paso shooting</td>
+      <td>-0.096658</td>
+      <td>770</td>
+      <td>461</td>
+      <td>-0.401299</td>
+    </tr>
+  </tbody>
+</table>
 
-This table show the other side of previous table, where we present the events that induced the most silencing effect on politicians. The recurring themes are mass shootings and topics where politicans have to take a stance that can be cleaving for the electors : Same-sex marriage supreme court rule, Baltimore protests, LGBT debate for republicans.
+This table shows the other side of the previous table, where we present the events that induced the most silencing effect on politicians. The recurring themes are mass shootings and topics where politicans have to take a stance that can be cleaving for the electors : Same-sex marriage supreme court rule, Baltimore protests, LGBT debate for republicans.
 
 All in all, this event examination revealed some pretty expected results. Overall, the amount of reaction has increased over time, with reactions being more virulent on political topics that don't force politicians to take a stance (touchy subjects) or following mass shootings. Donald Trump was at the heart of many of the most controversial debates.
 
